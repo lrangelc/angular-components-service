@@ -10,4 +10,8 @@ export class AppComponent {
   // imgParent = 'https://www.w3schools.com/howto/img_avatar.png';
   // imgParent = 'https://picsum.photos/200';
   imgParent = '';
+
+  onLoaded(img:string) {
+    console.log(`log padre ${img}`);
+  }
 }
