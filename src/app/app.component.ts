@@ -7,4 +7,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'angular-components-service';
+  // imgParent = 'https://www.w3schools.com/howto/img_avatar.png';
+  // imgParent = 'https://picsum.photos/200';
+  imgParent = '';
 }
