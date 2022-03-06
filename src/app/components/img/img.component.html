@@ -1,4 +1,4 @@
-<h1>{{img}}</h1>
+<!-- <h1>{{img}}</h1> -->
 <img [src]="img" alt="" [width]="width" *ngIf="img; else elseImg" (error)="imgError()" (load)="imgLoaded()">
 <!-- <h3>{{counter}}</h3> -->
 <ng-template #elseImg>
