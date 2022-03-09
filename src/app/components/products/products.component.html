@@ -10,6 +10,9 @@
 <p>
   Last login: {{lastDate | date:'full'}}
 </p>
+<p>
+  {{lastDate | timeAgo}}
+</p>
 <div class="products--grid">
   <app-product *ngFor="let product of products" [product]="product" (addedProduct)="onAddToShoppingCart($event)">
   </app-product>
