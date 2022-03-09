@@ -9,8 +9,14 @@ import { ImgComponent } from './components/img/img.component';
 import { ProductComponent } from './components/product/product.component';
 import { ProductsComponent } from './components/products/products.component';
 import { NavComponent } from './components/nav/nav.component';
+
+// Pipes
 import { ReversePipe } from './pipes/reverse.pipe';
 import { TimeAgoPipe } from './pipes/time-ago.pipe';
+import { ChangeVowelsPipe } from './pipes/change-vowels.pipe';
+
+// Directives
+import { HighlightDirective } from './directives/highlight.directive';
 
 @NgModule({
   declarations: [
@@ -20,7 +26,9 @@ import { TimeAgoPipe } from './pipes/time-ago.pipe';
     ProductsComponent,
     NavComponent,
     ReversePipe,
-    TimeAgoPipe
+    TimeAgoPipe,
+    ChangeVowelsPipe,
+    HighlightDirective
   ],
   imports: [
     BrowserModule,
