@@ -1,4 +1,4 @@
-import { Component, OnInit, Input, Output, EventEmitter, OnChanges, SimpleChanges, AfterViewInit, OnDestroy, SimpleChange } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter, OnChanges, SimpleChanges, AfterViewInit, OnDestroy } from '@angular/core';
 
 @Component({
   selector: 'app-img',
@@ -10,6 +10,7 @@ export class ImgComponent implements OnInit, OnChanges, AfterViewInit, OnDestroy
   img: string = '';
 
   // @Input()
+  // eslint-disable-next-line @angular-eslint/no-input-rename
   @Input('img')
   set changeImg(newImg: string) {
     this.img = newImg;
